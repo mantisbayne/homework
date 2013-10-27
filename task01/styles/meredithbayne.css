@@ -1,0 +1,37 @@
+.jumbotron {
+	color: #8533D6;
+	font-family: Arial, sans-serif;
+	display: block;
+}
+
+.lead {
+	color: black;
+}
+
+.lead a {
+	text-decoration: underline;
+}
+
+img {
+	height: 150px;
+	width: 150px;
+	display: inline-block;
+	float: right;
+	border: 2px solid #8533D6;
+	border-radius: 5px;
+}
+
+.progress-container {
+	margin-top: 30px;
+}
+
+span {
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	color: #33CCCC;
+	text-decoration: none;
+}
+
+#bottom a {
+	text-decoration: underline;
+}
