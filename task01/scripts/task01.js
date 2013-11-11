@@ -7,7 +7,7 @@ $(function() {
 
 	//
 	$('#pink-maker').click(function() {
-		$('body').css('background-color', 'rgb(200, 50, 90)'); 
+		$('body').css('background-color', 'rgb(255, 80, 184)'); 
 	});
 
 	$('#blue-maker').click(function() {
