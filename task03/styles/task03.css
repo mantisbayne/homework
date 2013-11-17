@@ -1,0 +1,14 @@
+#rto-play {
+	display: block;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.cat-start {
+	display: none;
+}
+
+#cagney {
+	height: 200px;
+	width: 200px;
+}
