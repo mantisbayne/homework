@@ -11,11 +11,71 @@ body {
 	padding: 30px;
 }
 
-#tour {
+.tour {
 	width: 860px;
 	height: 540px;
 	background-color: #ADFF2F;
 	box-shadow: 0px 0px 10px #888888;
 	margin: auto;
 	padding: 30px;
+	text-align: center;
+}
+
+.living {
+	width: 860px;
+	height: 540px;
+	background-color: #FFFF00;
+	box-shadow: 0px 0px 10px #888888;
+	margin: auto;
+	padding: 15px;
+	text-align: center;
+	display: none;
+}
+
+.living img {
+	width: 780px;
+	height: 500px;
+}
+
+.bath {
+	width: 860px;
+	height: 540px;
+	background-color: #4169E1;
+	box-shadow: 0px 0px 10px #888888;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	display: none;
+}
+
+.bath img {
+	height: 500px;
+	width: 280px;
+}
+
+.kitchen {
+	width: 860px;
+	height: 540px;
+	background-color: #FF0000;
+	box-shadow: 0px 0px 10px #888888;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	display: none;
+}
+
+.kitchen img {
+	width: 780px;
+	height: 500px;
+}
+
+.backyard {
+	width: 860px;
+	height: 540px;
+	background-color: #90EE90;
+	box-shadow: 0px 0px 10px #888888;
+	margin: auto;
+	padding: 25px;
+	text-align: center;
+	display: none;
 }
