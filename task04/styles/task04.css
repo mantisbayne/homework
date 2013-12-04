@@ -20,18 +20,31 @@ body {
 	box-shadow: 0px, 0px. 8px;
 }
 
-#play-01 {
+#play-1 {
 	display: none;
 }
 
-#play-02 {
+#play-2 {
 	display: none;
 }
 
-#play-03 {
+#play-3 {
 	display: none;
 }
 
-#play-04 {
+#play-4 {
 	display: none;
+}
+
+#lose {
+	display: none;
+	text-align: center;
+	font-family: Arial;
+	font-size: 36px;
+	height: 300px;
+	width: 300px;
+	color: #FFFFFF;
+	padding: 30px;
+	padding-top: 30px;
+	background-color: #FF0000;
 }
