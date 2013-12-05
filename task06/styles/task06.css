@@ -1,0 +1,50 @@
+body {
+	background-color: #87CEFA;
+}
+
+#title {
+	height: 90px;
+	font-family: Century Gothic, sans-serif;
+	font-size: 36px;
+	text-align: center;
+	display: block;
+	margin: auto;
+	padding: 20px;
+	text-shadow: -2px 2px 0px #D3D3D3;
+}
+
+#day-container {
+	height: 300px;
+	width: 680px;
+	display: block;
+	margin-right: 30px;
+	padding: 20px;
+	border: 1px solid black;
+	text-align: center;
+	background-color: #FFFFE0;
+	float: right;
+}
+
+#day-message {
+	font-family: Century Gothic, sans-serif;
+	font-size: 24px;
+	display: inline-block;
+}
+
+.day {
+	height: 100px;
+	width: 120px;
+	background-color: #FF4500;
+	display: inline-block;
+	border: 2px solid #708090;
+	box-shadow: 2px 2px 10px #708090;
+	font-family: Century Gothic, sans-serif;
+	font-size: 36px;
+	color: #FFFFFF;
+}
+
+#img {
+	display: inline-block;
+	float: left;
+	margin-left: 30px;
+}
