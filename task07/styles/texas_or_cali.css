@@ -1,0 +1,32 @@
+#title {
+	text-align: center;
+	font-size: 46px;
+}
+
+#subtitle {
+	text-align: center;
+	font-size: 24px;
+}
+
+#map-image {
+	height: 600px;
+	width: 700px;
+	padding-left: 25px;
+	background-color: #D3D3D3;
+	border: 1px solid #778899;
+	display: block;
+	margin: auto;
+}
+
+.btn {
+	width: 80px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+#button-container {
+	text-align: center;
+	display: inline;;
+}
