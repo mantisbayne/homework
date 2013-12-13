@@ -68,12 +68,12 @@ $(function() {
 	        this.y = 300;
     	}
 
-    	if (this.y - 50 < 0) {
-	        this.y = 50;
-	        this.speedY = -this.speedY;
-    	} else if (this.y + 50 > 600) {
-	        this.y = 550;
-	        this.speedY = -this.speedY;
+    	if (this.x - 50 < 0) {
+	        this.x = 50;
+	        this.speedX = -this.speedX;
+    	} else if (this.x + 50 > 1000) {
+	        this.x = 550;
+	        this.speedX = -this.speedX;
     	}
     };	
 });
