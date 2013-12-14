@@ -6,7 +6,9 @@ $(function() {
 		$canvas = $('canvas'),
 		//JQuery returns an array, so we need the first object
 		canvas = $canvas[0],
-	context = canvas.getContext('2d');
+		context = canvas.getContext('2d'),
+		PADDLE_HEIGHT = 200,
+		PADDLE_WIDTH = 50;
 	canvas.width = width;
 	canvas.height = height;
 	$canvas.width(width);
@@ -23,7 +25,7 @@ $(function() {
 		//Styling the paddle
 		context.fillStyle = '#FF1493';
 		//y-100 because we want the mouse to be in the center of the paddle
-		context.fillRect(0, y-100, 50, 200)
+		context.fillRect(0, y - PADDLE_HEIGHT / 2, PADDLE_WIDTH, PADDLE_HEIGHT);
 		//How many times it calls the function
 		ball.render();
 		ball.update();
@@ -41,8 +43,9 @@ $(function() {
 	function Ball(x, y) {
 		this.x = x;
 		this.y = y;
-		this.speedX = 5;
-		this.speedY = 2;
+		this.speedX = 15;
+		this.speedY = 12;
+		this.originalSpeedY = 12;
 		this.radius = 8;
 	}
 
@@ -58,22 +61,23 @@ $(function() {
 	};
 
 	Ball.prototype.update = function() {
-		this.x -= this.speedX;
+
+		if (this.x < PADDLE_WIDTH && this.x > 0 && this.y > y - PADDLE_HEIGHT / 2 && this.y < y + PADDLE_HEIGHT / 2) {
+			this.speedX = Math.abs(this.speedX);
+			yRatio = (this.y - y) / 100;
+			this.speedY = this.originalSpeedY * yRatio;
+		} else {
+	    	if (this.x < 0 || this.x > canvas.width) {
+		        this.speedX *= -1;
+	    	}
+
+	    	if (this.y < 0 || this.y > canvas.height) {
+	    		this.speedY *= -1;
+	    	}
+    	}
+
+
+    	this.x += this.speedX;
 		this.y += this.speedY;
-
-    	if (this.x < 0 || this.x > 600) {
-	        this.speedY = 0;
-	        this.speedX = 5;
-	        this.x = 500;
-	        this.y = 300;
-    	}
-
-    	if (this.x - 50 < 0) {
-	        this.x = 50;
-	        this.speedX = -this.speedX;
-    	} else if (this.x + 50 > 1000) {
-	        this.x = 550;
-	        this.speedX = -this.speedX;
-    	}
     };	
 });
