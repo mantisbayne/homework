@@ -2,3 +2,8 @@ canvas {
 	display: block;
 	margin: auto;
 }
+
+canvasCentered {
+	width: 70%;
+	margin: 0px auto;
+}
