@@ -1,21 +1,16 @@
 $(function() {
-	$('.tour img').click(function() {
-		$('.tour').hide('slow')
-		$('.living').css('display', 'block')
-	})
+	var counter = -1;
 
-	$('.living img').click(function() {
-		$('.living').hide('slow')
-		$('.bath').css('display', 'block')
-	})
+	var nextSlide = function() {
+		counter++;
 
-	$('.bath img').click(function() {
-		$('.bath').hide('slow')
-		$('.kitchen').css('display', 'block')
-	})
+		$('.slide').hide('slow');
 
-	$('.kitchen img').click(function() {
-		$('.kitchen').hide('slow')
-		$('.backyard').css('display', 'block')
-	})
+		$('#slide-' + counter)
+		  .show('slow')
+		  .click(function() {
+		  	nextSlide();
+		  });	
+	}	
+	nextSlide();
 })

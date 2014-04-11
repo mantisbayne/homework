@@ -64,7 +64,7 @@ $(function() {
 
     Ball.prototype.update = function() {
 
-        if (this.x < PADDLE_WIDTH && this.x > 0 && this.y > y - PADDLE_HEIGHT / 2 && this.y < y + PADDLE_HEIGHT / 2) {
+        if (this.x < PADDLE_WIDTH+16 && this.x > 0 && this.y > y - PADDLE_HEIGHT / 2 && this.y < y + PADDLE_HEIGHT / 2) {
             this.speedX = Math.abs(this.speedX);
             yRatio = (this.y - y) / 100;
             this.speedY = this.originalSpeedY * yRatio;
